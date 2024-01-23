@@ -1,0 +1,98 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+:root {
+    --primary-color: rgb(30, 215, 96);
+    --error-color: rgb(233, 20, 41);
+    --text-base: #ffffff;
+    --text-secondary: rgb(167, 167, 167);
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-error {
+    color: var(--error-color);
+}
+
+.text-base {
+    color: var(--text-base);
+}
+
+.text-secondary {
+    color: var(--text-secondary);
+}
+
+/* Circular Spotify Normal */
+@font-face {
+    font-family: 'CircularSp-Normal';
+    src: url('../fonts/CircularSp-Normal.woff2') format('woff2');
+}
+
+.text-normal {
+    font-family: 'CircularSp-Normal', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+}
+
+/* Circulas Spotify Bold */
+@font-face {
+    font-family: 'CircularSp-Bold';
+    src: url('../fonts/CircularSp-Bold.woff2') format('woff2');
+}
+
+.text-bold {
+    font-family: 'CircularSp-Bold', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0em;
+}
+
+/* Circulas Spotify Title */
+@font-face {
+    font-family: 'CircularSp-Title';
+    src: url('../fonts/CircularSpTitle-Bold.woff2') format('woff2');
+}
+
+.text-title {
+    font-family: 'CircularSp-Title', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.08em;
+}
+
+/* Container */
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+/* Columns */
+@media screen and (max-width: 769px) {
+    .columns {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+/* Navbar */
+.navbar {
+    border-bottom: 2px solid #f5f5f5;
+}
+
+/* Truncate text */
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
